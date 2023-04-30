@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: "Azeret Mono", monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#time {
+  font-size: 10rem;
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#focus,
+#name {
+  min-width: 20rem;
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.25rem;
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.75rem;
+}
