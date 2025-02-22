@@ -28,6 +28,7 @@ function addZero(n) {
 function dayPart() {
   let today = new Date();
   let hour = today.getHours();
+  const favicon = document.getElementById("favicon");
 
   if (hour < 12) {
     document.body.style.backgroundImage = "url('img/morning.jpg')";
@@ -35,18 +36,21 @@ function dayPart() {
     greeting.innerText = "Good Morning";
     greetingDayPart.innerText = "today?";
     document.title = "Good Morning" + " " + name.innerText;
+    favicon.href = "favicons/morning.png";
   } else if (hour < 18) {
     document.body.style.backgroundImage = "url('img/afternoon.jpg')";
     document.body.style.color = "black";
     greeting.innerText = "Good Afternoon";
     greetingDayPart.innerText = "this afternoon?";
     document.title = "Good Afternoon" + " " + name.innerText;
+    favicon.href = "favicons/afternoon.ico";
   } else {
     document.body.style.backgroundImage = "url('img/night.jpg')";
     document.body.style.color = "white";
     greeting.innerText = "Good Evening";
     greetingDayPart.innerText = "this evening?";
     document.title = "Good Evening" + " " + name.innerText;
+    favicon.href = "favicons/evening.ico";
   }
 }
 
