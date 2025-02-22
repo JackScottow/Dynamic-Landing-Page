@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem;
 }
 
 #time {
@@ -45,4 +46,51 @@ h2 {
   padding: 0.5rem;
   text-decoration: underline;
   text-underline-offset: 0.75rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  #time {
+    font-size: 7rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #focus,
+  #name {
+    min-width: 15rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #time {
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #focus,
+  #name {
+    min-width: 12rem;
+  }
+}
+
+/* Handle background images for mobile */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
 }
